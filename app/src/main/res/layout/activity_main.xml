@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zhouyunfei.lianjiasplashcopy.MainActivity">
+
+    <ImageView
+        android:id="@+id/main_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:alpha="0.3"
+        android:background="@mipmap/bg_main" />
+
+    <com.zhouyunfei.lianjiasplashcopy.HouseView
+        android:id="@+id/house_view"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/note_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/house_view"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:alpha="0"
+        android:text="我就是传说中卖房的"
+        android:textColor="#00ff00"
+        android:textSize="26dp" />
+
+</RelativeLayout>
